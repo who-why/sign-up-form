@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5f87e21e93.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="reg-form">
+          <div class="container">
+            <form>
+              <h1 id="title">Sign up</h1>
+              <div class="form-input" id="namefeild">
+                <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="Name">
+              </div>
+              <div class="form-input">
+                <i class="fa-solid fa-envelope"></i>
+                  <input type="text" placeholder="Email">
+              </div>
+              <div class="form-input">
+                <i class="fa-solid fa-key"></i>
+                  <input type="text" placeholder="passward">
+              </div>
+              <p>lost passward <a href="#">click here</a></p>
+
+            </form>
+            <div class="btn">
+                  <button type="button" id="signinbtn">Sign up</button>
+                  <button type="button" id="signupbtn" class="btn-2">Sign in</button>
+            </div>
+          </div>
+    </div>
+    <script>
+         let signinbtn=document.getElementById("signinbtn");
+         let signupbtn=document.getElementById("signupbtn");
+         let namefeild=document.getElementById("namefeild");
+         let title=document.getElementById("title");
+        signupbtn.onclick=function(){
+          namefeild.style.maxHeight="0";
+          title.innerHTML="Sign In";
+         
+        }
+        signinbtn.onclick=function(){
+          namefeild.style.maxHeight="60px";
+          title.innerHTML="Sign up";
+          
+        }
+    </script>
+</body>
+</html>
